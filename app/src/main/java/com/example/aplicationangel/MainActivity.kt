@@ -20,6 +20,21 @@ class MainActivity : AppCompatActivity() {
         val buttonlogin = findViewById<Button>(R.id.btnLogin)
 
         buttonlogin.setOnClickListener {
+            /* lifecycleScope.launch {
+                 val response = RetrofitClientPokemon.api().get(1)
+                 println("${response.id}")
+                 println("${response.forms}")
+
+                 for (i in 0..response.game_indices.size - 1) {
+                     println("${response.game_indices[i].version.name}")
+                 }
+                 for (i in 0..response.moves.size - 1) {
+                     for (j in 0..response.moves[i].version_group_details.size - 1) {
+                         println("${response.moves[i].version_group_details[j].moveLearnMethod.name}")
+                     }
+                 }
+             }
+             */
             val editTextname = binding.etUser.text.toString()
             val edittextpassword = binding.etPassword.text.toString()
             if (editTextname == name && edittextpassword == password) {
