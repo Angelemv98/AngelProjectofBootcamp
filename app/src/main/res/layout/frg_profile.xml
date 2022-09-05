@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FrgProfile">
+
+    <ImageView
+        android:id="@+id/icProfile"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_marginTop="150sp"
+        android:src="@drawable/ic_profile" />
+    <LinearLayout
+        android:id="@+id/llName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icProfile">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/User"
+        android:theme="@style/Text"
+        android:layout_weight="1"/>
+        <TextView
+            android:hint="@string/User"
+            android:id="@+id/tvUserNameProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:theme="@style/Text"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llName">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/Password"
+            android:theme="@style/Text"
+            android:layout_weight="1"/>
+        <TextView
+            android:hint="@string/Password"
+            android:id="@+id/tvPasswordProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:theme="@style/Text"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AplicationAngel</string>
+    <string name="User">User</string>
+    <string name="Password">Password</string>
+    <string name="SigIn">Sign In</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textspam"><p>Lorem ipsum dolor sit amet. Sit asperiores minus in facilis ducimus id nihil aliquid sed modi reprehenderit qui ipsam accusantium. Qui voluptatibus error id adipisci tempora et molestiae adipisci. Ex labore facilis sed beatae ipsa et itaque iure id corporis adipisci non maxime sequi. Id quisquam iure quo aliquid nihil qui architecto natus et laboriosam rerum et iusto quisquam vel expedita impedit ab pariatur consequatur. </p><p>Sed excepturi dicta ea recusandae perferendis est rerum quisquam ab dicta corrupti aut fuga alias eum autem soluta ut blanditiis esse. Qui voluptas rerum qui veritatis expedita ut consequatur sapiente ea sunt libero. Sed dolores consequuntur non tempora dolorem sed labore adipisci ab voluptatibus culpa. </p><p>Id molestiae beatae non internos nisi ut ipsum quibusdam ut earum suscipit. At quod labore ad optio culpa sed modi  ea deserunt dolorem aut accusamus quae? Quo voluptatum veniam ut obcaecati expedita ab iste repudiandae cum veritatis delectus ex quam asperiores id tempore odio eum reprehenderit delectus. Cum debitis velit et omnis cumque et sint rerum ad reiciendis aperiam id recusandae enim et voluptates perferendis est cupiditate dolor. </p></string>
+    <string name="textspamtwo">orem ipsum dolor sit amet. Sit iste quos non itaque animi ex veniam dolore? Est voluptas atque et soluta pariatur et enim adipisci non explicabo blanditiis id assumenda culpa non tempore unde. Aut suscipit blanditiis est enim maxime quo deleniti deserunt id molestiae nesciunt quo nostrum aspernatur est eligendi labore.</string>
+    <string name="textpamthree">Lorem ipsum dolor sit amet. Sed amet laudantium hic nulla minima aut iste galisum vel quidem quasi. Quo voluptatum quae et natus accusamus et error sint At minus dignissimos est modi voluptatem sit consequatur autem.</string>
+
+</resources>

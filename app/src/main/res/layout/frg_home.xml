@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FrgHome">
+    <TextView
+        android:id="@+id/tvWelcomeHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="Hola"/>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data User"
+            android:layout_marginHorizontal="4sp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnRecycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="4sp"
+            android:text="Recycler" />
+
+        <Button
+            android:id="@+id/btnForo"
+            android:layout_marginHorizontal="4sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Foro" />
+    </LinearLayout>
+
+</RelativeLayout>

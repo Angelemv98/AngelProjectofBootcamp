@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/frgHome">
+
+    <fragment
+        android:id="@+id/frgHome"
+        android:name="com.example.aplicationangel.FrgHome"
+        android:label="frg_home"
+        tools:layout="@layout/frg_home" >
+        <action
+            android:id="@+id/to_frgProfile"
+            app:destination="@id/frgProfile" />
+        <action
+            android:id="@+id/to_frgForo"
+            app:destination="@id/frgForo" />
+        <action
+            android:id="@+id/to_frgContent"
+            app:destination="@id/frgContent" />
+    </fragment>
+    <fragment
+        android:id="@+id/frgContent"
+        android:name="com.example.aplicationangel.recyclerview.view.FrgContent"
+        android:label="frg_content"
+        tools:layout="@layout/frg_content" />
+    <fragment
+        android:id="@+id/frgProfile"
+        android:name="com.example.aplicationangel.FrgProfile"
+        android:label="frg_profile"
+        tools:layout="@layout/frg_profile" />
+    <fragment
+        android:id="@+id/frgForo"
+        android:name="com.example.aplicationangel.FrgForo"
+        android:label="frg_foro"
+        tools:layout="@layout/frg_foro" />
+</navigation>
