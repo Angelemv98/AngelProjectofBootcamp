@@ -19,11 +19,23 @@
         <item name="boxCornerRadiusTopStart">20sp</item>
         <item name="boxBackgroundMode">outline</item>
         <item name="android:textSize">15sp</item>
-        <item name="boxStrokeColor">@color/input_box</item>
+        <item name="boxStrokeColor">@color/white</item>
         <item name="hintTextColor">#03A9F4</item>
         <item name="strokeWidth">20sp</item>
-        <item name="android:textColorHint">#000000</item>
-        <item name="startIconTint">#000000</item>
+        <item name="android:textColorHint">#FFFFFF</item>
+        <item name="startIconTint">#F8F4F4</item>
+    </style>
+
+    <style name="Them_AngelOptionText" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxCornerRadiusBottomEnd">20sp</item>
+        <item name="boxCornerRadiusTopStart">20sp</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name="android:textSize">15sp</item>
+        <item name="boxStrokeColor">@color/bg_am_input_box</item>
+        <item name="hintTextColor">#2196F3</item>
+        <item name="strokeWidth">20sp</item>
+        <item name="android:textColorHint">#FFFFFF</item>
+        <item name="startIconTint">#FFFFFF</item>
     </style>
 
 

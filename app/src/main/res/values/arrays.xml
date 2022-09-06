@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="estados">
+        <item>CMDX</item>
+        <item>Nuevo Leon</item>
+        <item>Veracruz</item>
+        <item>Chiapas</item>
+        <item>Hidalgo</item>
+        <item>EDOMEX</item>
+        <item>San Luis Potosi</item>
+        <item>Quintana Roo</item>
+    </string-array>
+
+    <string-array name="genero">
+        <item>Masculino</item>
+        <item>Femenino</item>
+        <item>Otro</item>
+    </string-array>
+</resources>

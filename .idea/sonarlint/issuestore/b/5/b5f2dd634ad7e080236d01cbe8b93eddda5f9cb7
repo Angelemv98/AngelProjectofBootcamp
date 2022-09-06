@@ -1,0 +1,6 @@
+
+akotlin:S101"JRename class "version" to match the regular expression ^[A-Z][a-zA-Z0-9]*$(ôîÛ»
+kkotlin:S101"TRename class "move_learn_method" to match the regular expression ^[A-Z][a-zA-Z0-9]*$(æþºÁ
+jkotlin:S117"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Å¹Úáøÿÿÿÿ
+jkotlin:S117"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(œŸÖ—ÿÿÿÿÿ
+dkotlin:S1176"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Õ—Ì

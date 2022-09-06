@@ -1,7 +1,21 @@
 
 X
 (gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
-ƒ
-Sapp/src/main/java/com/example/aplicationangel/data/network/RetrofitClientPokemon.kt,c\1\c141d62073bcd72b950dcd3a907c4d2a4ebcd0fc
 @
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
+s
+Capp/src/main/java/com/example/aplicationangel/data/model/Request.kt,b\5\b5f2dd634ad7e080236d01cbe8b93eddda5f9cb7
+x
+Happ/src/main/java/com/example/aplicationangel/data/model/LoginRequest.kt,6\d\6d9ed9ea1ec5f249210bee0357b548d3499e1c68
+k
+;app/src/main/java/com/example/aplicationangel/LoginState.kt,6\f\6fc3f6dae603f418bb4b0045988f05ec521b7a29
+y
+Iapp/src/main/java/com/example/aplicationangel/data/model/LoginResponse.kt,d\9\d9306c594cc84d96349fba12988249c6e49595a9
+x
+Happ/src/main/java/com/example/aplicationangel/data/network/ApiService.kt,8\3\83c7c9c24a57b426ea2965afb743ba7ce0dccb91
+r
+Bapp/src/main/java/com/example/aplicationangel/data/network/Path.kt,e\7\e7a0cd589ce94fe27927e4a323bda8582b4cb809
+ƒ
+Sapp/src/main/java/com/example/aplicationangel/data/network/RetrofitClientPokemon.kt,c\1\c141d62073bcd72b950dcd3a907c4d2a4ebcd0fc
+…
+Uapp/src/main/java/com/example/aplicationangel/presentation/viewmodel/MainViewModel.kt,2\f\2f50a69f0a842287144a6d386f4656a21b2a3a27
