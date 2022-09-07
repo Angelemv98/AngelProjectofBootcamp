@@ -27,6 +27,20 @@ class MainActivity : AppCompatActivity() {
                     )
                 )
             }
+            /*lifecycleScope.launch {
+                val database = DataBase(this@MainActivity).getDB()
+                database.daoUser().deleteUSer()
+                database.daoUser().insertUser(
+                    UserEntity(
+                        "Root",
+                        "Angel",
+                        "Morales",
+                        "angel123"
+                    )
+                )
+                val users = database.daoUser().getUSer()
+                println(users)
+            }*/
         }
         binding.btnSignUp.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
@@ -40,6 +54,8 @@ class MainActivity : AppCompatActivity() {
                 }
                 is LoginState.Exitoso -> {
                     println("Api exitoso")
+                    val intent = Intent(this, ActDash::class.java)
+                    startActivity(intent)
                 }
                 is LoginState.Error -> {
                     println("${it.message}")

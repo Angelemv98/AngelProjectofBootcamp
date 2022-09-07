@@ -36,7 +36,7 @@
                 android:layout_below="@+id/tvDatospersonales"
                 android:layout_marginTop="15sp"
                 android:hint="Nombre"
-                app:helperText="Dejaste el campo vacio"
+                app:helperText="Requerido"
                 app:helperTextTextColor="#FF1100"
                 app:errorEnabled="true"
                 app:startIconDrawable="@drawable/ic_am_user">
@@ -64,8 +64,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15sp"
-                app:helperText="Dejaste el campo vacio"
-                app:helperTextTextColor="#FF1100"
+                app:helperText="Requerido"                app:helperTextTextColor="#FF1100"
                 android:hint="Apellido Paterno"
                 app:errorEnabled="true"
 
@@ -82,18 +81,15 @@
             <!-- second lastname-->
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_weight="1"
-                app:helperText="Dejaste el campo vacio"
+                app:helperText="Requerido"
                 app:helperTextTextColor="#FF1100"
                 android:id="@+id/inputAngelSecondSurname"
                 style="@style/Them_AngelInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/inputAngelName"
-                android:layout_toEndOf="@id/inputAngelSurname"
                 android:layout_marginTop="15sp"
                 android:hint="Apellido Materno"
                 app:errorEnabled="true"
-
                 app:startIconDrawable="@drawable/ic_am_user">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -120,23 +116,19 @@
                 style="@style/Them_AngelInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:helperText="Dejaste el campo vacio"
-                app:helperTextTextColor="#FF1100"
+                app:helperText="Requerido"                app:helperTextTextColor="#FF1100"
                 android:layout_marginTop="15sp"
                 android:hint="Cumpleaños"
                 app:errorEnabled="true"
-
                 app:startIconDrawable="@drawable/ic_am_birthday">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etAngelBirthday"
-
                     style="@style/Them_AngelTextInputEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:focusable="false"
                     android:inputType="none"
-
                     />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -147,12 +139,11 @@
                 android:layout_width="match_parent"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                app:helperText="Dejaste el campo vacio"
+                app:helperText="Requerido"
                 app:helperTextTextColor="#FF1100"
                 android:layout_marginTop="15sp"
                 android:hint="Sexo"
                 app:errorEnabled="true"
-
                 app:startIconDrawable="@drawable/ic_am_gender">
 
                 <AutoCompleteTextView
@@ -172,10 +163,7 @@
                 android:layout_below="@+id/llBirthandGenre"
                 android:layout_marginTop="15sp"
                 android:hint="Email"
-                app:helperText="Dejaste el campo vacio"
-                app:helperTextTextColor="#FF1100"
-                app:errorEnabled="true"
-
+                app:helperText="Requerido"                app:helperTextTextColor="#FF1100"
                 app:startIconDrawable="@drawable/ic_am_mail">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -195,7 +183,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/inputAngelEmail"
                 android:layout_marginTop="15sp"
-                app:helperText="Dejaste el campo vacio"
+                app:helperText="Requerido"
                 app:helperTextTextColor="#FF1100"
                 android:hint="Estado"
                 app:errorEnabled="true"
@@ -218,11 +206,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/inputAngelPlace"
                 android:layout_marginTop="15sp"
-                app:helperText="Dejaste el campo vacio"
-                app:helperTextTextColor="#FF1100"
+                app:helperText="Requerido"                app:helperTextTextColor="#FF1100"
                 android:hint="Telefono"
                 app:errorEnabled="true"
-
                 app:startIconDrawable="@drawable/ic_am_phone">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -253,7 +239,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15sp"
-                app:helperText="Dejaste el campo vacio"
+                app:helperText="Requerido"
                 app:helperTextTextColor="#FF1100"
                 android:hint="Nombre de Usuario"
                 app:errorEnabled="true"
@@ -280,8 +266,7 @@
                 android:layout_below="@+id/inputUserName"
                 android:layout_marginTop="15sp"
                 app:errorEnabled="true"
-                app:helperText="Dejaste el campo vacio"
-                app:helperTextTextColor="#FF1100"
+                app:helperText="Requerido"                app:helperTextTextColor="#FF1100"
                 android:hint="Password"
                 app:startIconDrawable="@drawable/ic_am_lock">
 
@@ -302,7 +287,7 @@
                 android:layout_below="@+id/inputAngelPassword"
                 android:layout_marginTop="15sp"
                 app:errorEnabled="true"
-                app:helperText="Dejaste el campo vacio"
+                app:helperText="Requerido"
                 app:helperTextTextColor="#FF1100"
                 android:hint="Confirm Password"
                 app:startIconDrawable="@drawable/ic_am_lock">
