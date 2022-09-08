@@ -8,8 +8,10 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.example.aplicationangel.DatePickerAlert
+import com.example.aplicationangel.LoginState
 import com.example.aplicationangel.R
 import com.example.aplicationangel.databinding.ActivityRegisterBinding
+import com.example.aplicationangel.registerAct.data.model.RegisterRequest
 import com.example.aplicationangel.registerAct.local.room.DataBase
 import com.example.aplicationangel.registerAct.local.room.entity.UserParadigms
 import com.example.aplicationangel.registerAct.presentation.viewmodel.RegisterViewModel
@@ -53,24 +55,22 @@ class RegisterActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "Revisa tus errores", Toast.LENGTH_LONG).show()
             }
-            /* CON API
-            viewModel.register(
-                 RegisterRequest(
-                     binding.etAngelUserName.text.toString(),
-                     binding.etAngelName.text.toString(),
-                     binding.etAngelSurname.text.toString(),
-                     binding.etAngelSecondSurname.text.toString(),
-                     binding.etAngelBirthday.text.toString(),
-                     binding.etAngelEmail.text.toString(),
-                     binding.etAngelGender.text.toString(),
-                     binding.etAngelPlace.text.toString(),
-                     binding.etAngelPhone.text.toString(),
-                     binding.etAngelPassword.text.toString(),
-                     "Solero"
-                 )
-             )
-            DATABASE INTERNA
 
+            viewModel.register(
+                RegisterRequest(
+                    binding.etAngelUserName.text.toString(),
+                    binding.etAngelName.text.toString(),
+                    binding.etAngelSurname.text.toString(),
+                    binding.etAngelSecondSurname.text.toString(),
+                    binding.etAngelBirthday.text.toString(),
+                    binding.etAngelEmail.text.toString(),
+                    binding.etAngelGender.text.toString(),
+                    binding.etAngelPlace.text.toString(),
+                    binding.etAngelPhone.text.toString(),
+                    binding.etAngelPassword.text.toString(),
+                    "Solero"
+                )
+            )
         }
         viewModel.stateRegister.observe(this) {
             when (it) {
@@ -83,7 +83,7 @@ class RegisterActivity : AppCompatActivity() {
                 is LoginState.Error -> {
                     println("${it.message}")
                 }
-            }*/
+            }
         }
     }
 

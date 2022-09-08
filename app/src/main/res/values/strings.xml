@@ -8,4 +8,7 @@
     <string name="textspamtwo">orem ipsum dolor sit amet. Sit iste quos non itaque animi ex veniam dolore? Est voluptas atque et soluta pariatur et enim adipisci non explicabo blanditiis id assumenda culpa non tempore unde. Aut suscipit blanditiis est enim maxime quo deleniti deserunt id molestiae nesciunt quo nostrum aspernatur est eligendi labore.</string>
     <string name="textpamthree">Lorem ipsum dolor sit amet. Sed amet laudantium hic nulla minima aut iste galisum vel quidem quasi. Quo voluptatum quae et natus accusamus et error sint At minus dignissimos est modi voluptatem sit consequatur autem.</string>
 
+    <string name="open_drawer">Drawer Open</string>
+    <string name="close_drawer">Drawer Close</string>
+
 </resources>

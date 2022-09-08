@@ -1,7 +1,9 @@
 package com.example.aplicationangel
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.example.aplicationangel.data.model.LoginRequest
@@ -26,6 +28,14 @@ class MainActivity : AppCompatActivity() {
                         binding.etPassword.text.toString()
                     )
                 )
+                val nameLog: String = binding.etUser.text.toString().trim()
+                val passLog: String = binding.etPassword.text.toString().trim()
+
+                val sharedPreference = getSharedPreferences("PREFERENCE_NAME", Context.MODE_PRIVATE)
+                var editor = sharedPreference.edit()
+                editor.putString("userName", nameLog)
+                editor.putString("userPassword", passLog)
+                editor.apply()
             }
             /*lifecycleScope.launch {
                 val database = DataBase(this@MainActivity).getDB()
@@ -58,7 +68,7 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 is LoginState.Error -> {
-                    println("${it.message}")
+                    Toast.makeText(this@MainActivity, "Something went wrong", Toast.LENGTH_LONG).show()
                 }
             }
         }
