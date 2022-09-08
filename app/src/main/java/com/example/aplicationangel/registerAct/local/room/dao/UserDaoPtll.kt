@@ -10,6 +10,9 @@ interface UserDaoPtll {
     @Insert
     suspend fun insertUser(userParadigms: UserParadigms)
 
+    @Query("Select name FROM angelUsers WHERE user= :usernamelocal")
+    suspend fun getNameUser(usernamelocal: String): String
+
     @Query("SELECT * FROM angelUsers")
     suspend fun getUSer(): List<UserParadigms>
 

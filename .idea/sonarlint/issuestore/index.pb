@@ -1,10 +1,6 @@
 
 X
 (gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
-@
-app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
-p
-@app/src/main/java/com/example/aplicationangel/DatePickerAlert.kt,a\a\aa81bad0af0ea9cfea76d609aac50c0a431f0812
 ~
 Napp/src/main/java/com/example/aplicationangel/registerAct/data/network/Path.kt,0\f\0f9255bb3e780f85486f495dc638ae983e2c911a
 k
@@ -41,7 +37,5 @@ Wapp/src/main/java/com/example/aplicationangel/registerAct/data/model/RegisterRe
 eapp/src/main/java/com/example/aplicationangel/registerAct/presentation/viewmodel/RegisterViewModel.kt,4\d\4d02375daaba60e062f022e850af7361f5448cb3
 ‹
 [app/src/main/java/com/example/aplicationangel/registerAct/domain/usecase/RegisterUseCase.kt,2\5\25b5d49084642a246bb55ef2fff59b326b46146d
-{
-Kapp/src/main/java/com/example/aplicationangel/data/local/room/DBCosntant.kt,2\4\240c9ce81044341cf165e216219ab4a54cb0ee71
-‚
-Rapp/src/main/java/com/example/aplicationangel/data/local/room/entity/UserEntity.kt,5\8\582171d9c6e671ea71bec20a41c1c307620298ec
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e

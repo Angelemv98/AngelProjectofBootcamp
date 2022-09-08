@@ -13,5 +13,5 @@ import com.example.aplicationangel.registerAct.local.room.entity.UserParadigms
 )
 
 abstract class DB : RoomDatabase() {
-    abstract fun daoUser(): UserDaoPtll
+    abstract fun daoUserptll(): UserDaoPtll
 }
