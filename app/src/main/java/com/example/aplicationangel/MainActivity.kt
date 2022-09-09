@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import com.example.aplicationangel.dashAct.ActDash
 import com.example.aplicationangel.data.model.LoginRequest
 import com.example.aplicationangel.databinding.ActivityMainBinding
 import com.example.aplicationangel.presentation.viewmodel.MainViewModel
@@ -75,6 +76,5 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun checkisValid() =
-        binding.etUser.text.toString().isNotEmpty() && binding.etPassword.text.toString()
-            .isNotEmpty()
+        binding.etUser.text.toString().isNotEmpty() && binding.etPassword.text.toString().isNotEmpty()
 }

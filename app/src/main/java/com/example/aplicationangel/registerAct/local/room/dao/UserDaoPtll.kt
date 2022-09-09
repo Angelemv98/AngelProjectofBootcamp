@@ -13,6 +13,9 @@ interface UserDaoPtll {
     @Query("Select name FROM angelUsers WHERE user= :usernamelocal")
     suspend fun getNameUser(usernamelocal: String): String
 
+    @Query("Select * FROM angelUsers WHERE user= :usernamelocal")
+    suspend fun getAllUser(usernamelocal: String): UserParadigms
+
     @Query("SELECT * FROM angelUsers")
     suspend fun getUSer(): List<UserParadigms>
 

@@ -33,6 +33,7 @@ class RegisterActivity : AppCompatActivity() {
                     val database =
                         DataBase(this@RegisterActivity)
                             .getDB()
+                    database.daoUserptll().deleteUSer()
                     database.daoUserptll().insertUser(
                         UserParadigms(
                             binding.etAngelUserName.text.toString(),
