@@ -1,16 +1,19 @@
-package com.example.aplicationangel
+package com.example.aplicationangel.profilefrg
 
-import android.content.Context
-import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import com.example.aplicationangel.R
+import com.example.aplicationangel.dashAct.presentation.viewmodel.ActDashViewModel
 import com.example.aplicationangel.databinding.FrgProfileBinding
 
 class FrgProfile : Fragment() {
     private lateinit var binding: FrgProfileBinding
+    private val viewModel: ActDashViewModel by viewModels()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -27,12 +30,12 @@ class FrgProfile : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FrgProfileBinding.bind(view)
-
-        var sharedPreferences: SharedPreferences =
-            requireActivity().getSharedPreferences("PREFERENCE_NAME", Context.MODE_PRIVATE)
-        val user = sharedPreferences.getString("userName", "")
-        val pass = sharedPreferences.getString("userPassword", "")
-        binding.tvUserNameProfile.text = "$user"
-        binding.tvPasswordProfile.text = "$pass"
+        viewModel.perfilData("Angelemv98", requireContext())
+        viewModel.stateInfo.observe(viewLifecycleOwner) {
+            var nombre = it.name
+            binding.tvUserNameProfile
+           // binding.tvPasswordProfile.text.toString() + it.email
+            println("GOD ${it.name} ${it.birthday}")
+        }
     }
 }

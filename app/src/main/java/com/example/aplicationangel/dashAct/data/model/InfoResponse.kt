@@ -1,6 +1,5 @@
 package com.example.aplicationangel.dashAct.data.model
 
-import com.example.aplicationangel.registerAct.local.room.dao.UserDaoPtll
 import com.example.aplicationangel.registerAct.local.room.entity.UserParadigms
 import com.google.gson.annotations.SerializedName
 

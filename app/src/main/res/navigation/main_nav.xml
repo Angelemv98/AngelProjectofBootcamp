@@ -28,7 +28,7 @@
         tools:layout="@layout/frg_content" />
     <fragment
         android:id="@+id/frgProfile"
-        android:name="com.example.aplicationangel.FrgProfile"
+        android:name="com.example.aplicationangel.profilefrg.FrgProfile"
         android:label="frg_profile"
         tools:layout="@layout/frg_profile" />
     <fragment

@@ -9,8 +9,6 @@ y
 Iapp/src/main/java/com/example/aplicationangel/data/local/room/DataBase.kt,7\6\761c91c94208273d8fb2e649c3153556c9c51867
 s
 Capp/src/main/java/com/example/aplicationangel/data/local/room/DB.kt,2\1\21709c4d923f39e538266a45a4273a42df450bcd
-@
-app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 ‚
 Rapp/src/main/java/com/example/aplicationangel/data/local/room/entity/UserEntity.kt,5\8\582171d9c6e671ea71bec20a41c1c307620298ec
 {
@@ -21,5 +19,3 @@ z
 Japp/src/main/java/com/example/aplicationangel/registerAct/local/room/DB.kt,3\a\3aec43d638a3e9d811591d4ea637a8d54f5d146c
 „
 Tapp/src/main/java/com/example/aplicationangel/registerAct/local/room/DBConstantes.kt,4\6\465f8905c437a20115fec063605c965330caaa7f
-k
-;app/src/main/java/com/example/aplicationangel/FrgProfile.kt,5\a\5a0411cf077e9fe3fb7aec751a8caa1c518552d7
