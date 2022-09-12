@@ -20,6 +20,12 @@
         <action
             android:id="@+id/to_frgContent"
             app:destination="@id/frgContent" />
+        <action
+            android:id="@+id/to_buttonNavigation"
+            app:destination="@id/buttonNavigation" />
+        <action
+            android:id="@+id/to_pokeApi2"
+            app:destination="@id/pokeApi2" />
     </fragment>
     <fragment
         android:id="@+id/frgContent"
@@ -36,4 +42,13 @@
         android:name="com.example.aplicationangel.FrgForo"
         android:label="frg_foro"
         tools:layout="@layout/frg_foro" />
+    <activity
+        android:id="@+id/buttonNavigation"
+        android:name="com.example.aplicationangel.buttonnav.ButtonNavigation"
+        android:label="button_navigation"
+        tools:layout="@layout/button_navigation" />
+    <fragment
+        android:id="@+id/pokeApi2"
+        android:name="com.example.aplicationangel.pokeApi.view.PokeApi"
+        android:label="PokeApi" />
 </navigation>

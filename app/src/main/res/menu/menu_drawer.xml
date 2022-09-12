@@ -16,5 +16,15 @@
             android:icon="@drawable/ic_am_lock"
             android:title="About"
             />
+        <item
+            android:id="@+id/menuNav"
+            android:icon="@drawable/ic_menu"
+            android:title="Menu Navigation"
+            />
+        <item
+            android:id="@+id/pokeApi"
+            android:icon="@drawable/ic_games"
+            android:title="PokeApi"
+            />
     </group>
 </menu>

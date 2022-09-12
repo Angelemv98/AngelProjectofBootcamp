@@ -35,12 +35,14 @@ class FrgHome : Fragment() {
         val userfromlogin: String = userflogin.toString()
         binding = FrgHomeBinding.bind(view)
         var userNamefromDB: String = ""
-        lifecycleScope.launch {
+        binding.tvWelcomeHome.text = "Bienvenido!: \n $userflogin"
+
+        /*lifecycleScope.launch {
             val database =
                 DataBase(requireContext())
                     .getDB()
             userNamefromDB = database.daoUserptll().getNameUser("$userfromlogin")
             binding.tvWelcomeHome.text = "Bienvenido!: \n $userNamefromDB"
-        }
+        }*/
     }
 }

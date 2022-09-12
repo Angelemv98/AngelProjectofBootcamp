@@ -1,10 +1,6 @@
 
 X
 (gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
-h
-8app/src/main/java/com/example/aplicationangel/FrgForo.kt,d\6\d64229078b4aa90514c0acb951b75190f3f6e40e
-p
-@app/src/main/java/com/example/aplicationangel/DatePickerAlert.kt,a\a\aa81bad0af0ea9cfea76d609aac50c0a431f0812
 y
 Iapp/src/main/java/com/example/aplicationangel/data/local/room/DataBase.kt,7\6\761c91c94208273d8fb2e649c3153556c9c51867
 s

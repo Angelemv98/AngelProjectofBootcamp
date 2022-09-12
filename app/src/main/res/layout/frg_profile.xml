@@ -33,6 +33,7 @@
             android:layout_weight="1"/>
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/llemail"
         android:layout_marginTop="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -41,12 +42,33 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/Password"
+            android:text="Email"
             android:theme="@style/Text"
             android:layout_weight="1"/>
         <TextView
-            android:hint="@string/Password"
-            android:id="@+id/tvPasswordProfile"
+            android:hint=""
+            android:id="@+id/tvEmailprof"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:theme="@style/Text"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llemail">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Nombre"
+            android:theme="@style/Text"
+            android:layout_weight="1"/>
+        <TextView
+            android:hint=""
+            android:id="@+id/tvnameUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"

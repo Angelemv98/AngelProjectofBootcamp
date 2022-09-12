@@ -6,7 +6,7 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-object RetrofitClientPokemon {
+object RetrofitRegister {
 
     private const val connectionTimeOut = 20L
     private const val readTiemOut = 20L

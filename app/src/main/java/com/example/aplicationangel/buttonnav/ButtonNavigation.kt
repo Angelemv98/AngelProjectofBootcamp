@@ -6,21 +6,18 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.example.aplicationangel.R
 import com.example.aplicationangel.databinding.ButtonNavigationBinding
-import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class ButtonNavigation : AppCompatActivity() {
     private lateinit var binding: ButtonNavigationBinding
     private lateinit var botomnavigation: BottomNavigationView
-    private lateinit var toolbar: MaterialToolbar
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ButtonNavigationBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        toolbar = binding.materialToolBar
-        toolbar.setTitle(R.string.app_name)
-        changefragment(HomeFragment())
+
         botomnavigation = binding.bottomNavigation
+        changefragment(HomeFragment())
         botomnavigation.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.item_home -> changefragment(HomeFragment())

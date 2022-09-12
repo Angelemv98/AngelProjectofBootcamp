@@ -5,7 +5,7 @@ import com.example.aplicationangel.data.model.LoginResponse
 import retrofit2.http.Body
 import retrofit2.http.POST
 
-interface ApiService {
+interface ApiLoginService {
     // https://pokeapi.co        //HOST
     // /api/v2/pokemon/charizard?   //ENDPOINT
     // limit=1                      //Parametros

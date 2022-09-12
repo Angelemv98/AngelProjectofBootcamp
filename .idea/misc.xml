@@ -7,9 +7,13 @@
         <entry key="..\:/AplicationAngel/app/src/main/res/drawable/bg_card.xml" value="0.22" />
         <entry key="..\:/AplicationAngel/app/src/main/res/drawable/bg_cardtwo.xml" value="0.22" />
         <entry key="..\:/AplicationAngel/app/src/main/res/drawable/ic_am_profile.xml" value="0.22" />
+        <entry key="..\:/AplicationAngel/app/src/main/res/drawable/ic_games.xml" value="0.22" />
         <entry key="..\:/AplicationAngel/app/src/main/res/drawable/ic_home.xml" value="0.22" />
+        <entry key="..\:/AplicationAngel/app/src/main/res/drawable/ic_menu.xml" value="0.22" />
         <entry key="..\:/AplicationAngel/app/src/main/res/drawable/ic_notification.xml" value="0.22" />
         <entry key="..\:/AplicationAngel/app/src/main/res/layout/activity_act_dash.xml" value="0.371875" />
+        <entry key="..\:/AplicationAngel/app/src/main/res/layout/activity_main.xml" value="0.29791666666666666" />
+        <entry key="..\:/AplicationAngel/app/src/main/res/layout/activity_register.xml" value="0.29791666666666666" />
         <entry key="..\:/AplicationAngel/app/src/main/res/layout/button_navigation.xml" value="0.371875" />
         <entry key="..\:/AplicationAngel/app/src/main/res/layout/fragment_home.xml" value="0.371875" />
         <entry key="..\:/AplicationAngel/app/src/main/res/layout/fragment_notifiaction.xml" value="0.371875" />
@@ -20,7 +24,10 @@
         <entry key="..\:/AplicationAngel/app/src/main/res/layout/frg_profile.xml" value="0.371875" />
         <entry key="..\:/AplicationAngel/app/src/main/res/layout/item_card.xml" value="0.37083333333333335" />
         <entry key="..\:/AplicationAngel/app/src/main/res/layout/item_cardtwo.xml" value="0.371875" />
+        <entry key="..\:/AplicationAngel/app/src/main/res/layout/item_options.xml" value="0.29791666666666666" />
+        <entry key="..\:/AplicationAngel/app/src/main/res/layout/poke_api.xml" value="0.30673316708229426" />
         <entry key="..\:/AplicationAngel/app/src/main/res/menu/botonnavigationmenu.xml" value="0.37083333333333335" />
+        <entry key="..\:/AplicationAngel/app/src/main/res/menu/menu_drawer.xml" value="0.371875" />
         <entry key="..\:/workspace/AplicationAngel/app/src/main/res/drawable-v24/bg_butto.xml" value="0.1955" />
         <entry key="..\:/workspace/AplicationAngel/app/src/main/res/drawable-v24/ic_password_login.xml" value="0.1955" />
         <entry key="..\:/workspace/AplicationAngel/app/src/main/res/drawable-v24/ic_password_visibility_off.xml" value="0.1955" />

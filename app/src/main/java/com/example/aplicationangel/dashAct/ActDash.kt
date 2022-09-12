@@ -69,6 +69,12 @@ class ActDash : AppCompatActivity(), NavigationView.OnNavigationItemSelectedList
             R.id.menu_about -> {
                 Navigation.findNavController(this, R.id.nav_host_fragment).navigate(R.id.frgForo)
             }
+            R.id.menuNav -> {
+                Navigation.findNavController(this, R.id.nav_host_fragment).navigate(R.id.buttonNavigation)
+            }
+            R.id.pokeApi -> {
+                Navigation.findNavController(this, R.id.nav_host_fragment).navigate(R.id.pokeApi2)
+            }
         }
         binding.drawerLayout.closeDrawer(GravityCompat.START)
         return super.onOptionsItemSelected(item)
