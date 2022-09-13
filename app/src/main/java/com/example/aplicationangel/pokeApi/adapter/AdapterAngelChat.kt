@@ -3,6 +3,7 @@ package com.example.aplicationangel.pokeApi.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.CheckBox
 import android.widget.Filter
 import android.widget.Filterable
 import android.widget.TextView
@@ -42,6 +43,11 @@ class AdapterAngelChat(private val chat: List<Chat>) :
                 0 -> {
                     val tvMessage: TextView = itemView.findViewById(R.id.tvCard)
                     tvMessage.text = chat.message
+                    var chPokemono: CheckBox = itemView.findViewById(R.id.cbCard)
+                    chPokemono.setOnCheckedChangeListener { _, b ->
+                        chat.isChecked = b
+                    }
+                    chPokemono.isChecked = chat.isChecked
                 }
             }
         }

@@ -1,6 +1,5 @@
 package com.example.aplicationangel.registerAct.data.network
 
-
 import com.example.aplicationangel.registerAct.data.model.RegisterRequest
 import com.example.aplicationangel.registerAct.data.model.RegisterResponse
 import retrofit2.http.Body
