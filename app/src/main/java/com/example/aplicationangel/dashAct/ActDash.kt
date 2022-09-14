@@ -9,6 +9,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
+import androidx.navigation.NavOptions
 import androidx.navigation.Navigation
 import com.example.aplicationangel.R
 import com.example.aplicationangel.dashAct.presentation.viewmodel.ActDashViewModel
@@ -60,6 +61,12 @@ class ActDash : AppCompatActivity(), NavigationView.OnNavigationItemSelectedList
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
+            R.id.menu_Home -> {
+                val navOptions: NavOptions =
+                    NavOptions.Builder().setPopUpTo(R.id.frgHome, true).build()
+                Navigation.findNavController(this, R.id.nav_host_fragment)
+                    .navigate(R.id.frgHome, null, navOptions)
+            }
             R.id.menu_profile -> {
                 Navigation.findNavController(this, R.id.nav_host_fragment).navigate(R.id.frgProfile)
             }
@@ -70,7 +77,8 @@ class ActDash : AppCompatActivity(), NavigationView.OnNavigationItemSelectedList
                 Navigation.findNavController(this, R.id.nav_host_fragment).navigate(R.id.frgForo)
             }
             R.id.menuNav -> {
-                Navigation.findNavController(this, R.id.nav_host_fragment).navigate(R.id.buttonNavigation)
+                Navigation.findNavController(this, R.id.nav_host_fragment)
+                    .navigate(R.id.buttonNavigation)
             }
             R.id.pokeApi -> {
                 Navigation.findNavController(this, R.id.nav_host_fragment).navigate(R.id.pokeApi2)

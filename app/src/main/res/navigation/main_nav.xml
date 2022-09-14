@@ -10,23 +10,7 @@
         android:id="@+id/frgHome"
         android:name="com.example.aplicationangel.FrgHome"
         android:label="frg_home"
-        tools:layout="@layout/frg_home" >
-        <action
-            android:id="@+id/to_frgProfile"
-            app:destination="@id/frgProfile" />
-        <action
-            android:id="@+id/to_frgForo"
-            app:destination="@id/frgForo" />
-        <action
-            android:id="@+id/to_frgContent"
-            app:destination="@id/frgContent" />
-        <action
-            android:id="@+id/to_buttonNavigation"
-            app:destination="@id/buttonNavigation" />
-        <action
-            android:id="@+id/to_pokeApi2"
-            app:destination="@id/pokeApi2" />
-    </fragment>
+        tools:layout="@layout/frg_home" />
     <fragment
         android:id="@+id/frgContent"
         android:name="com.example.aplicationangel.recyclerview.view.FrgContent"
@@ -39,9 +23,13 @@
         tools:layout="@layout/frg_profile" />
     <fragment
         android:id="@+id/frgForo"
-        android:name="com.example.aplicationangel.FrgForo"
+        android:name="com.example.aplicationangel.about.FrgForo"
         android:label="frg_foro"
-        tools:layout="@layout/frg_foro" />
+        tools:layout="@layout/frg_foro" >
+        <action
+            android:id="@+id/to_aboutsecundary"
+            app:destination="@id/aboutsecundary" />
+    </fragment>
     <activity
         android:id="@+id/buttonNavigation"
         android:name="com.example.aplicationangel.buttonnav.ButtonNavigation"
@@ -51,4 +39,37 @@
         android:id="@+id/pokeApi2"
         android:name="com.example.aplicationangel.pokeApi.view.PokeApi"
         android:label="PokeApi" />
+    <fragment
+        android:id="@+id/frgAboutthird"
+        android:name="com.example.aplicationangel.about.FrgAboutthird"
+        android:label="frg_aboutthird"
+        tools:layout="@layout/frg_aboutthird" >
+        <action
+            android:id="@+id/to_frgForo"
+            app:destination="@id/frgForo"
+            app:popUpTo="@id/frgForo"
+            app:popUpToInclusive="true"
+            />
+        <argument
+            android:name="argFromBint"
+            app:argType="integer"/>
+        <argument
+            android:name="argFromBboolean"
+            app:argType="boolean"/>
+        <argument
+            android:name="argFromBstring"
+            app:argType="string"/>
+    </fragment>
+    <fragment
+        android:id="@+id/aboutsecundary"
+        android:name="com.example.aplicationangel.about.FrgAboutSecond"
+        android:label="frgaboutsecundary"
+        tools:layout="@layout/frgaboutsecundary" >
+        <action
+            android:id="@+id/to_frgAboutthird"
+            app:destination="@id/frgAboutthird"/>
+        <argument
+            android:name="argFromA"
+            app:argType="string"/>
+    </fragment>
 </navigation>

@@ -69,12 +69,14 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 is LoginState.Error -> {
-                    Toast.makeText(this@MainActivity, "Something went wrong", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@MainActivity, "Something went wrong", Toast.LENGTH_LONG)
+                        .show()
                 }
             }
         }
     }
 
     private fun checkisValid() =
-        binding.etUser.text.toString().isNotEmpty() && binding.etPassword.text.toString().isNotEmpty()
+        binding.etUser.text.toString().isNotEmpty() && binding.etPassword.text.toString()
+            .isNotEmpty()
 }
