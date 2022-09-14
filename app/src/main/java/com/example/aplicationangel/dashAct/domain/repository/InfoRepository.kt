@@ -5,8 +5,9 @@ import com.example.aplicationangel.dashAct.data.model.User
 import com.example.aplicationangel.dashAct.data.model.toUser
 import com.example.aplicationangel.dashAct.data.network.RetrofitClientInfo
 import com.example.aplicationangel.registerAct.local.room.DataBase
+import javax.inject.Inject
 
-class InfoRepository {
+class InfoRepository @Inject constructor() {
     suspend fun info(userLogin: String, context: Context): User {
         val database = DataBase(context).getDB()
         val user = database.daoUserptll().getAllUser(userLogin)

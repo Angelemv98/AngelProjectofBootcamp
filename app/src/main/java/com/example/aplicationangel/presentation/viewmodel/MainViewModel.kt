@@ -7,11 +7,14 @@ import androidx.lifecycle.viewModelScope
 import com.example.aplicationangel.LoginState
 import com.example.aplicationangel.data.model.LoginRequest
 import com.example.aplicationangel.domain.usecase.LoginUseCase
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class MainViewModel : ViewModel() {
-
-    private val loginUseCase = LoginUseCase()
+@HiltViewModel
+class MainViewModel @Inject constructor(
+    private val loginUseCase: LoginUseCase
+) : ViewModel() {
 
     private var _stateLogin: MutableLiveData<LoginState> = MutableLiveData()
     val stateLogin: LiveData<LoginState> get() = _stateLogin

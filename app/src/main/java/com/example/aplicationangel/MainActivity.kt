@@ -11,7 +11,9 @@ import com.example.aplicationangel.data.model.LoginRequest
 import com.example.aplicationangel.databinding.ActivityMainBinding
 import com.example.aplicationangel.presentation.viewmodel.MainViewModel
 import com.example.aplicationangel.registerAct.RegisterActivity
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private val viewModel: MainViewModel by viewModels()
@@ -38,20 +40,6 @@ class MainActivity : AppCompatActivity() {
                 editor.putString("userPassword", passLog)
                 editor.apply()
             }
-            /*lifecycleScope.launch {
-                val database = DataBase(this@MainActivity).getDB()
-                database.daoUser().deleteUSer()
-                database.daoUser().insertUser(
-                    UserEntity(
-                        "Root",
-                        "Angel",
-                        "Morales",
-                        "angel123"
-                    )
-                )
-                val users = database.daoUser().getUSer()
-                println(users)
-            }*/
         }
         binding.btnSignUp.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)

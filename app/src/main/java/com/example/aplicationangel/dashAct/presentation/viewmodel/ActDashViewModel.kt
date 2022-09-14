@@ -7,11 +7,14 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.aplicationangel.dashAct.data.model.User
 import com.example.aplicationangel.dashAct.domain.usercase.InfoUsecase
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class ActDashViewModel : ViewModel() {
-
-    private val infoUsecase = InfoUsecase()
+@HiltViewModel
+class ActDashViewModel @Inject constructor(
+    private val infoUsecase: InfoUsecase
+) : ViewModel() {
 
     private var _stateInfo: MutableLiveData<User> = MutableLiveData()
     val stateInfo: LiveData<User> get() = _stateInfo

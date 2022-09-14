@@ -15,7 +15,9 @@ import com.example.aplicationangel.R
 import com.example.aplicationangel.dashAct.presentation.viewmodel.ActDashViewModel
 import com.example.aplicationangel.databinding.ActivityActDashBinding
 import com.google.android.material.navigation.NavigationView
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class ActDash : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var binding: ActivityActDashBinding
