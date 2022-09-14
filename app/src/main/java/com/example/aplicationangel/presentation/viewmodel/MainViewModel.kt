@@ -9,9 +9,7 @@ import com.example.aplicationangel.data.model.LoginRequest
 import com.example.aplicationangel.domain.usecase.LoginUseCase
 import kotlinx.coroutines.launch
 
-class MainViewModel : ViewModel() {
-
-    private val loginUseCase = LoginUseCase()
+class MainViewModel(private val loginUseCase: LoginUseCase) : ViewModel() {
 
     private var _stateLogin: MutableLiveData<LoginState> = MutableLiveData()
     val stateLogin: LiveData<LoginState> get() = _stateLogin

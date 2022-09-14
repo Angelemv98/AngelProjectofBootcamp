@@ -7,14 +7,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
+import androidx.lifecycle.ViewModelProvider
 import com.example.aplicationangel.R
 import com.example.aplicationangel.dashAct.presentation.viewmodel.ActDashViewModel
 import com.example.aplicationangel.databinding.FrgProfileBinding
 
 class FrgProfile : Fragment() {
     private lateinit var binding: FrgProfileBinding
-    private val viewModel: ActDashViewModel by viewModels()
+    private lateinit var viewModel: ActDashViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,6 +32,9 @@ class FrgProfile : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FrgProfileBinding.bind(view)
+        viewModel = requireActivity().run {
+            ViewModelProvider(this)[ActDashViewModel::class.java]
+        }
         var sharedPreferences: SharedPreferences =
             requireActivity().getSharedPreferences("PREFERENCE_NAME", Context.MODE_PRIVATE)
         val userflogin = sharedPreferences.getString("userName", "")

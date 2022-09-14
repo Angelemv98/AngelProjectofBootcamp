@@ -4,17 +4,18 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
-import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.example.aplicationangel.dashAct.ActDash
 import com.example.aplicationangel.data.model.LoginRequest
 import com.example.aplicationangel.databinding.ActivityMainBinding
 import com.example.aplicationangel.presentation.viewmodel.MainViewModel
 import com.example.aplicationangel.registerAct.RegisterActivity
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    private val viewModel: MainViewModel by viewModels()
+
+    private val viewModel by viewModel<MainViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

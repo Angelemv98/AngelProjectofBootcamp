@@ -4,7 +4,6 @@ import com.example.aplicationangel.data.model.LoginRequest
 import com.example.aplicationangel.data.model.LoginResponse
 import com.example.aplicationangel.data.network.RetrofitClientPokemon
 
-
 class LoginRepository {
     var wifi = true
     suspend fun login(loginRequest: LoginRequest): LoginResponse {

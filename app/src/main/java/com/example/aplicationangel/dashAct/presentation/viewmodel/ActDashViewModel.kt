@@ -9,9 +9,7 @@ import com.example.aplicationangel.dashAct.data.model.User
 import com.example.aplicationangel.dashAct.domain.usercase.InfoUsecase
 import kotlinx.coroutines.launch
 
-class ActDashViewModel : ViewModel() {
-
-    private val infoUsecase = InfoUsecase()
+class ActDashViewModel(private val infoUsecase: InfoUsecase) : ViewModel() {
 
     private var _stateInfo: MutableLiveData<User> = MutableLiveData()
     val stateInfo: LiveData<User> get() = _stateInfo

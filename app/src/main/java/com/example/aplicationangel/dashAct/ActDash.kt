@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
 import android.widget.TextView
-import androidx.activity.viewModels
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
@@ -15,12 +14,14 @@ import com.example.aplicationangel.R
 import com.example.aplicationangel.dashAct.presentation.viewmodel.ActDashViewModel
 import com.example.aplicationangel.databinding.ActivityActDashBinding
 import com.google.android.material.navigation.NavigationView
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class ActDash : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var binding: ActivityActDashBinding
     private lateinit var actionBarDrawerToggle: ActionBarDrawerToggle
-    private val viewModel: ActDashViewModel by viewModels()
+
+    private val viewModel by viewModel<ActDashViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
